@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@keyframes arrow {
+    0% {opacity: 0;}
+    40% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes arrow {
+    0% {opacity: 0;}
+    40% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.hero-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../image/nubelson-fernandes-iE71-TMrrkE-unsplash\ \(1\).jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+nav{
+    width: 50%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+li{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+li:hover{
+    color: #D870DB;
+}
+
+.arrows{
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path{
+    stroke: white;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 1s infinite;
+    -webkit-animation: arrow 1s infinite;
+}
+
+.arrow path.a1 {
+    animation-delay:  -0.5s;
+    -webkit-animation-delay:  -0.5s;
+}
+
+.arrow path.a2 {
+    animation-delay:  -0.5s;
+    -webkit-animation-delay:  -0.5s;
+}
+
+.arrow path.a3 {
+    animation-delay:  -0.5s;
+    -webkit-animation-delay:  -0.5s;
+}
+
+.content-container {
+    height: 100vh;
+}
