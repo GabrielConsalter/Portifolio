@@ -65,25 +65,108 @@ li:hover{
     stroke: white;
     fill: transparent;
     stroke-width: 1px;
-    animation: arrow 1s infinite;
-    -webkit-animation: arrow 1s infinite;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
 }
 
-.arrow path.a1 {
+.arrows path.a1 {
+    animation-delay:  -1s;
+    -webkit-animation-delay:  -1s;
+}
+
+.arrows path.a2 {
     animation-delay:  -0.5s;
     -webkit-animation-delay:  -0.5s;
 }
 
-.arrow path.a2 {
-    animation-delay:  -0.5s;
-    -webkit-animation-delay:  -0.5s;
-}
-
-.arrow path.a3 {
-    animation-delay:  -0.5s;
-    -webkit-animation-delay:  -0.5s;
+.arrows path.a3 {
+    animation-delay:  0s;
+    -webkit-animation-delay:  0s;
 }
 
 .content-container {
     height: 100vh;
+    background-color: #333;
+}
+
+.profile-container{
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../image/akin-cakiner-xKBmqz66gEs-unsplash.jpg');
+    background-size: cover;
+}
+
+.profile-content{
+    width: 30%;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.profile-image{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #D870DB;
+}
+
+.name-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.profile-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.profile-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #D870DB;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    border-top: .5px solid #bfbfbf;
+    margin: 20px 0;
+}
+
+.icons-container{
+    display: flex;
+    width: 100%;  
+    justify-content: space-around;
+}
+
+.icon-item{
+    width: 80px;
+    height: auto;
+}
+
+.profile-sinopse{
+    width: 430px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    color: white;
 }
