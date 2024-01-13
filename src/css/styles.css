@@ -14,6 +14,21 @@
     100% {opacity: 0;}
 }
 
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #D870DB;
+}
+
+html ::-webkit-scrollbar-track {
+    background: black;
+}
+
+
+
 .hero-container{
     height: 100vh;
     display: flex;
@@ -102,11 +117,11 @@ li:hover{
     background-size: cover;
 }
 
-.profile-content{
+.profile-content {
     width: 30%;
 }
 
-.profile-card{
+.profile-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,20 +131,20 @@ li:hover{
     border-radius: 8px;
 }
 
-.profile-image{
+.profile-image {
     width: 150px;
     height: auto;
     border-radius: 50%;
     border: 4px solid #D870DB;
 }
 
-.name-text{
+.name-text {
     font-family: 'Oswald', sans-serif;
     font-size: 21px;
     margin-top: 15px;
 }
 
-.profile-text{
+.profile-text {
     font-family: 'Oswald', sans-serif;
     font-size: 17px;
     margin-top: 10px;
@@ -137,16 +152,23 @@ li:hover{
     width: 80%;
 }
 
-.profile-button{
-    width: 150px;
+.buttons-profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.profile-button {
+    width: 130px;
     height: 50px;
     border-radius: 15px;
     border: none;
     background-color: #D870DB;
     color: white;
     font-family: 'Oswald', sans-serif;
-    font-size: 17px;
-    margin-top: 35px;
+    font-size: 19px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
@@ -163,15 +185,25 @@ li:hover{
 }
 
 .icon-item{
-    width: 80px;
+    width: 60px;
     height: auto;
 }
 
 .profile-sinopse{
-    width: 430px;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sinopse {
+    width: 100%;
+    height: 75%;
     font-family: 'Oswald', sans-serif;
     font-size: 17px;
     color: white;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .project-container{
@@ -227,7 +259,7 @@ li:hover{
 }
 
 .project-image{
-    width: 450px;
+    width: 380px;
     height: auto;
     position: relative;
     border-radius: 8px;
@@ -239,9 +271,36 @@ li:hover{
     left: 20px;
 }
 
+.card-text{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
 .project-text{
     color: white;
     font-family: 'Oswald', sans-serif;
+}
+
+.buttons-text-container {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button-text{
+    width: 60px;
+    height: 35px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    background-color: #D870DB;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .project-buttons{

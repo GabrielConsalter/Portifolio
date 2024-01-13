@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
+
 <body>
     <div class="hero-container">
         <header>
@@ -38,9 +40,19 @@
                         Foco, Disciplina e Consistencia.<br>
                         Vamos revolucionar o mercado de tecnologia juntos?
                     </span>
-                    <a href="https://www.linkedin.com/in/gabriel-augusto-consalter-57954116b/" target="_blank">
-                        <button class="profile-button">Conhecer Linkedin</button>
-                    </a>
+                    <div class="buttons-profile">
+                        <a href="https://www.linkedin.com/in/gabriel-augusto-consalter-57954116b/" target="_blank">
+                            <button class="profile-button"> Linkedin</button>
+                        </a>
+                        <a href="https://github.com/GabrielConsalter" target="_blank">
+                            <button class="profile-button">GitHub</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./src/image/Currículo.pdf" target="_blank">
+                            <button style="margin-top: 10px;" class="profile-button">Currículo</button>
+                        </a>
+                    </div>
                     <div class="divider"></div>
                     <div class="icons-container">
                         <img class="icon-item" src="./src/image/js.png">
@@ -50,7 +62,34 @@
                 </div>
             </div>
             <div class="profile-sinopse">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nulla consequatur rerum sit porro ab assumenda? Commodi harum corrupti sequi consectetur voluptatem magnam illo nihil quis molestias explicabo, distinctio doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi libero repellendus inventore earum praesentium ullam totam ipsum deleniti quos fugiat labore saepe nam ab illum et ipsa voluptas, enim rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex architecto facere nemo quo adipisci asperiores iusto repudiandae voluptate ad sunt expedita consequuntur ea ab voluptas ipsam, inventore fugit. Beatae, eaque?
+                <p class="sinopse">
+                    Sou um estudante prestes a concluir o curso de Engenharia da Computação, e desde o início da
+                    faculdade,
+                    nutro uma paixão crescente pelo desenvolvimento web. Ao longo do curso, essa paixão se fortaleceu,
+                    permitindo-me aprofundar meus conhecimentos nesta área, explorando diversas linguagens e aprimorando
+                    suas aplicações ao longo do tempo.<br>
+
+                    Tive a oportunidade de estagiar como desenvolvedor web júnior em uma pequena empresa local, onde
+                    coloquei em prática os conhecimentos adquiridos na faculdade e por conta própria. Durante esse
+                    estágio,
+                    concentrei-me especialmente em linguagens como HTML, CSS e PHP, além de trabalhar com o framework
+                    Laravel.<br>
+
+                    Posteriormente, surgiu a oportunidade de atuar como assistente de TI na Lwart Soluções Ambientais,
+                    uma
+                    grande empresa em minha cidade. Optei por essa mudança devido à remuneração mais atrativa,
+                    diferentemente do estágio anterior, que não oferecia remuneração. Apesar de não estar diretamente na
+                    área desejada, essa experiência ampliou minhas habilidades interpessoais, como trabalho em equipe,
+                    atendimento ao cliente e comunicação. Além disso, proporcionou um entendimento próximo do ambiente
+                    corporativo de uma grande empresa, contribuindo significativamente para o meu crescimento
+                    profissional.<br>
+
+                    Atualmente, estou em busca de uma nova oportunidade para ingressar novamente no mercado de trabalho,
+                    focando na área que tanto almejo. Paralelamente, continuo a aprofundar meus conhecimentos em
+                    desenvolvimento web por meio do curso "Profissão Programador". Estou desenvolvendo habilidades em
+                    Front-end (HTML, CSS, JS e TypeScript) e back-end (NodeJS e SQL), além de participar ativamente de
+                    eventos dedicados a programadores iniciantes.
+                </p>
             </div>
         </div>
     </div>
@@ -60,33 +99,73 @@
                 <div class="position-container right selecionado">
                     <div class="project-card">
                         <img class="project-image" src="./src/image/pokedex.PNG">
-                        <p class="project-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam molestias voluptatibus, iste, quaerat eveniet quia natus voluptas laborum enim provident placeat perferendis itaque sit tenetur magnam, qui illo dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        </p>
+                        <div class="card-text">
+                            <p class="project-text">
+                                Desenvolvimento pessoal de um website que emula uma Pokedex inspirada no anime Pokemon. Neste projeto, integrei a API pública 'PokeAPI' utilizando as linguagens HTML, CSS e JS. O foco principal foi aprimorar minhas habilidades em JavaScript, especialmente no contexto de manipulação de APIs.
+                            </p>
+                            <div class="buttons-text-container">
+                                <a href="https://github.com/GabrielConsalter/Pokedex-Project" target="_blank">
+                                    <button class="button-text">GitHub</button>
+                                </a>
+                                <a href="https://gabrielconsalter.github.io/Pokedex-Project/" target="_blank">
+                                    <button class="button-text">Site</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="position-container left selecionado">
                     <div class="project-card card-reverse">
                         <img class="project-image image-reverse" src="./src/image/onepiece.PNG">
-                        <p class="project-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam molestias voluptatibus, iste, quaerat eveniet quia natus voluptas laborum enim provident placeat perferendis itaque sit tenetur magnam, qui illo dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        </p>
+                        <div class="card-text">
+                            <p class="project-text">
+                                Desenvolvimento pessoal de um website que emula uma Pokedex inspirada no anime Pokemon. Neste projeto, integrei a API pública 'PokeAPI' utilizando as linguagens HTML, CSS e JS. O foco principal foi aprimorar minhas habilidades em JavaScript, especialmente no contexto de manipulação de APIs.
+                            </p>
+                            <div class="buttons-text-container">
+                                <a href="https://github.com/GabrielConsalter/Pokedex-Project" target="_blank">
+                                    <button class="button-text">GitHub</button>
+                                </a>
+                                <a href="https://gabrielconsalter.github.io/Pokedex-Project/" target="_blank">
+                                    <button class="button-text">Site</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="position-container left">
                     <div class="project-card card-reverse">
                         <img class="project-image image-reverse" src="./src/image/batman.PNG">
-                        <p class="project-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam molestias voluptatibus, iste, quaerat eveniet quia natus voluptas laborum enim provident placeat perferendis itaque sit tenetur magnam, qui illo dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        </p>
+                        <div class="card-text">
+                            <p class="project-text">
+                                Desenvolvimento pessoal de um website que emula uma Pokedex inspirada no anime Pokemon. Neste projeto, integrei a API pública 'PokeAPI' utilizando as linguagens HTML, CSS e JS. O foco principal foi aprimorar minhas habilidades em JavaScript, especialmente no contexto de manipulação de APIs.
+                            </p>
+                            <div class="buttons-text-container">
+                                <a href="https://github.com/GabrielConsalter/Pokedex-Project" target="_blank">
+                                    <button class="button-text">GitHub</button>
+                                </a>
+                                <a href="https://gabrielconsalter.github.io/Pokedex-Project/" target="_blank">
+                                    <button class="button-text">Site</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="position-container right">
                     <div class="project-card">
                         <img class="project-image" src="./src/image/pokedex.PNG">
-                        <p class="project-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam molestias voluptatibus, iste, quaerat eveniet quia natus voluptas laborum enim provident placeat perferendis itaque sit tenetur magnam, qui illo dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        </p>
+                        <div class="card-text">
+                            <p class="project-text">
+                                Desenvolvimento pessoal de um website que emula uma Pokedex inspirada no anime Pokemon. Neste projeto, integrei a API pública 'PokeAPI' utilizando as linguagens HTML, CSS e JS. O foco principal foi aprimorar minhas habilidades em JavaScript, especialmente no contexto de manipulação de APIs.
+                            </p>
+                            <div class="buttons-text-container">
+                                <a href="https://github.com/GabrielConsalter/Pokedex-Project" target="_blank">
+                                    <button class="button-text">GitHub</button>
+                                </a>
+                                <a href="https://gabrielconsalter.github.io/Pokedex-Project/" target="_blank">
+                                    <button class="button-text">Site</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,4 +184,5 @@
     <script src="https://kit.fontawesome.com/be1926d606.js" crossorigin="anonymous"></script>
     <script src="./src/js/script.js"></script>
 </body>
+
 </html>
