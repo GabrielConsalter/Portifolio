@@ -331,3 +331,74 @@ button{
     background-color: transparent;
     height: 50px;
 }
+
+.contact-content {
+    height: 100%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../image/contato-background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .inputs {
+    width: 96%;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    height: 20px;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  textarea {
+    min-width: 378px;
+    min-height: 170px;
+    max-width: 378px;
+    max-height: 170px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+  }
+  
+  #send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 125px;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 19px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #D870DB;
+  }
+  
+  #send-button:hover {
+    color: #fff;
+  }

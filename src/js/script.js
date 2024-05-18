@@ -22,4 +22,3 @@ projetos.forEach((p, i) => {
         }
     })
 })
-
