@@ -221,98 +221,148 @@ li:hover{
 }
 
 .project-content{
-    width: 75%;
+    display: none;
+    width: 50%;
     height: 80%;
-    display: grid;
-    grid-template-rows: repeat(1fr, 2);
+    z-index: 10;
 }
 
-.position-container{
+.project-full{
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.project-info{
+    display: none;
+    padding-bottom: 15%;
+    width: 20%;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    overflow-x: hidden;
+}
+
+.selecionado{
+    display: block;
+
+}
+
+.slider {
+    display: block;
+    width: auto;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 400px;
+    width: 800px;
+    vertical-align: top;
+}
+
+.slider input {
     display: none;
 }
 
-.selecionado {
-    display: flex;
-}
-
-.right{
-    justify-content: flex-end;
-}
-
-.left{
-    justify-content: flex-start;
-}
-
-.project-card{
-    width: 700px;
-    height: 200px;
-    background-color: black;
-    box-shadow: 10px 10px 5px black;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-}
-
-.card-reverse{
-    flex-direction: row-reverse;
-}
-
-.project-image{
-    width: 380px;
-    height: auto;
-    position: relative;
-    border-radius: 8px;
-    right: 20px;
-    top: 40px;
-}
-
-.image-reverse{
-    left: 20px;
-}
-
-.card-text{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-.project-text{
-    color: white;
-    font-family: 'Oswald', sans-serif;
-}
-
-.buttons-text-container {
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.button-text{
-    width: 60px;
-    height: 35px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 15px;
-    background-color: #D870DB;
-    border-radius: 8px;
+.slider label {
+    background-color: #fff;
+    bottom: -20px;
     cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 1;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider li:nth-child(4) label {
+    left: 10px;
+}
+
+.slider li:nth-child(5) label {
+    left: 40px;
+}
+
+.slider li:nth-child(6) label {
+    left: 70px;
+}
+
+.slider li:nth-child(7) label {
+    left: 10px;
+}
+
+.slider li:nth-child(8) label {
+    left: 40px;
+}
+
+.slider li:nth-child(9) label {
+    left: 70px;
+}
+
+.slider li:nth-child(10) label {
+    left: 10px;
+}
+
+.slider li:nth-child(11) label {
+    left: 40px;
+}
+
+.slider li:nth-child(12) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.slider li input:checked ~ label {
+    background-color: #D870DB;
 }
 
 .project-buttons{
     width: 100%;
-    height: 50px;
+    height: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
+    z-index: 1;
+    bottom: 0;
 }
 
 .buttons-container{
     width: 3%;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;

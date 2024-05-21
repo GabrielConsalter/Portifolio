@@ -1,0 +1,38 @@
+@media(max-width: 1650px) {
+    
+    .slider img {
+        height: 300px;
+        width: 600px;
+    }
+
+    .project-info{
+        padding-bottom: 10%;
+    }
+    
+}
+
+@media(max-width: 1250px) {
+    
+    .slider img {
+        height: 200px;
+        width: 400px;
+    }
+
+    .project-info{
+        padding-bottom: 35%;
+    }
+
+}
+
+@media(max-width: 850px) {
+    
+    .slider img {
+        height: 100px;
+        width: 200px;
+    }
+
+    .project-info{
+        padding-bottom: 45%;
+    }
+
+}

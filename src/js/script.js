@@ -1,24 +1,35 @@
-const projetos = document.querySelectorAll('.position-container')
+const projetos = document.querySelectorAll('.project-content')
+const infos = document.querySelectorAll('.project-info')
 const nextButton = document.querySelector('.button-next')
 const backButton = document.querySelector('.button-previous')
 
-projetos.forEach((p, i) => {
-    nextButton.addEventListener('click', () => {
-        if(i == 0) {
-            projetos[i+2].classList.add('selecionado')
-            projetos[i+3].classList.add('selecionado')
-            projetos[i].classList.remove('selecionado')
-            projetos[i+1].classList.remove('selecionado')
-        }
-    })
+var aux = 0
 
-    backButton.addEventListener('click', () => {
-        console.log(i);
-        if(i == 0){
-            projetos[i].classList.add('selecionado')
-            projetos[i+1].classList.add('selecionado')
-            projetos[i+2].classList.remove('selecionado')
-            projetos[i+3].classList.remove('selecionado')
-        }
-    })
-})
+nextButton.onclick = function (){
+    if(aux < 3){
+        projetos[aux+1].classList.add('selecionado')
+        projetos[aux].classList.remove('selecionado')
+        infos[aux+1].classList.add('selecionado')
+        infos[aux].classList.remove('selecionado')
+        var slide = document.getElementById(`slide${aux+2}`)
+        slide.checked = true;
+        aux++
+    }
+}
+
+backButton.onclick = function (){
+    if(aux > 0){
+        projetos[aux-1].classList.add('selecionado')
+        projetos[aux].classList.remove('selecionado')
+        infos[aux-1].classList.add('selecionado')
+        infos[aux].classList.remove('selecionado')
+        var slide = document.getElementById(`slide${aux}`)
+        slide.checked = true
+        aux--
+    }
+}
+
+window.onload = function () {
+    var slide = document.getElementById('slide1')
+    slide.checked = true;
+}
